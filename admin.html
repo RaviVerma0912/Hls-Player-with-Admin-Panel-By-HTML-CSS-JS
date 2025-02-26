@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Channels</title>
+    <script type="module" src="admin.js"></script>
+</head>
+<body>
+    <h2>Manage Channels</h2>
+    <form id="channel-form">
+        <input type="hidden" id="channel-id">
+        <input type="text" id="channel-name" placeholder="Channel Name" required>
+        <input type="url" id="channel-url" placeholder="Channel URL" required>
+        <button type="submit">Add/Update Channel</button>
+    </form>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>URL</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="channel-list"></tbody>
+    </table>
+    
+    <button id="logout">Logout</button>
+</body>
+</html>

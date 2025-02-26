@@ -29,7 +29,7 @@ This project is a web-based **HLS (HTTP Live Streaming) Player** with an integra
    - Create a new project and enable Firestore & Storage
    - Add Firebase SDK to your `index.js`
 
-## Firestore Rules (Restrict Access to Website Only)
+## Firestore Rules 
 Use these **secure Firestore rules** to allow only requests from your website:
 ```c
 rules_version = '2';

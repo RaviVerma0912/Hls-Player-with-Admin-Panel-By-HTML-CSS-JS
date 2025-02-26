@@ -1,0 +1,104 @@
+/* Ensure table rows have a white background */
+#channel-list tbody tr {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Override Bootstrap striping */
+#channel-list tbody tr:nth-child(odd),
+#channel-list tbody tr:nth-child(even) {
+    background-color: white !important;
+}
+
+/* Ensure table headers are also white */
+#channel-list thead th {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Style action buttons properly */
+#channel-list td button {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+/* Prevent any hover effects changing the row color */
+#channel-list tbody tr:hover {
+    background-color: white !important;
+    color: black !important;
+}
+
+/* Fixed Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow below navbar */
+    padding: 10px 0;
+    font-size: 1.5rem; /* Base font size for navbar brand */
+}
+
+/* Add space below the navbar */
+body {
+    padding-top: 80px; /* Adjust height to match navbar */
+    background: #f8f9fa; /* Light background */
+}
+
+/* Ensure content does not stick to the navbar */
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Add spacing between elements */
+.table-responsive {
+    margin-top: 20px;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce space below 'Manage Channels' heading */
+h2 {
+    margin-bottom: 30px; /* Adjust as needed for 1-2 lines space */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1.25rem; /* Smaller text size for tablets */
+    }
+
+    form {
+        width: 90%; /* Adjust width for tablets */
+    }
+
+    .container {
+        padding-top: 60px; /* Adjust space below navbar */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 1.125rem; /* Smaller text size for phones */
+    }
+
+    form {
+        width: 100%; /* Adjust width for phones */
+    }
+
+    .container {
+        padding-top: 40px; /* Adjust space below navbar */
+    }
+}

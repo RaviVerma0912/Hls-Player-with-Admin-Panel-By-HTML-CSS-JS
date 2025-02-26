@@ -1,0 +1,116 @@
+/* Ensure full-page background gradient */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #eaeaea) !important;
+    text-align: center;
+}
+
+/* Login container for centering */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login box styling */
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+/* Title spacing */
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Logo styling */
+.logo {
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Login button */
+#login-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#login-btn:hover {
+    opacity: 0.9;
+}
+
+/* Space between input fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Navbar fixed at top */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white !important;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem; /* Base font size for navbar brand */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 1.25rem; /* Smaller text size for tablets */
+    }
+
+    .login-box {
+        width: 90%; /* Adjust width for tablets */
+    }
+
+    input {
+        padding: 8px; /* Adjust padding for input fields */
+    }
+
+    #login-btn {
+        padding: 8px; /* Adjust padding for login button */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 1.125rem; /* Smaller text size for phones */
+    }
+
+    .login-box {
+        width: 100%; /* Adjust width for phones */
+    }
+
+    input {
+        padding: 6px; /* Adjust padding for input fields */
+    }
+
+    #login-btn {
+        padding: 6px; /* Adjust padding for login button */
+    }
+}

@@ -20,8 +20,8 @@ This project is a web-based **HLS (HTTP Live Streaming) Player** with an integra
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/hls-player.git
-   cd hls-player
+   git clone https://github.com/https://github.com/RaviVerma0912/Hls-Player-with-Admin-Panel-By-HTML-CSS-JS.git
+   cd Hls-Player-with-Admin-Panel-By-HTML-CSS-JS
    ```
 2. **Open `index.html` in a browser.**
 3. **Configure Firebase:**
